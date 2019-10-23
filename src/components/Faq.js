@@ -35,6 +35,13 @@ export default function Faq() {
                     <div className="text">Text</div>
                 </div>
             </div>
+            <div className="box-container">
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+                <div className="box"></div>
+            </div>
         </div>
     )
 }

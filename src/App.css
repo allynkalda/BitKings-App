@@ -28,10 +28,10 @@
 
 .circle {
   position: relative;
-  border: 2px solid #999; 
+  border: 2px solid #00b2e3; 
   border-radius: 100%; 
-  width: 50px; 
-  line-height: 50px; 
+  width: 3em; 
+  line-height: 3em; 
   text-align: center; 
   background-color: #fff; 
   z-index: 2;
@@ -39,8 +39,8 @@
 }
 
 .line {
-  border-left: 2px solid #999;
-  height: 50px;
+  border-left: 2px solid #00b2e3;
+  height: 10vh;
   align-self: center;
 }
 
@@ -48,4 +48,25 @@
   display:none;
 }
 
-  
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box:nth-child(odd) {
+  background: #00b2e3;
+}
+
+.box:nth-child(even) {
+  background: #44546A;
+}
+
+.box {
+  width: 15vw;
+  height: 15vh;
+  box-shadow: 5px 8px 5px #888888;
+  border-radius: 5px;
+}
