@@ -7,7 +7,6 @@ import Pricing from './components/Pricing';
 function App() {
   return (
     <div className="App">
-      <h1>BitKings</h1>
       <Switch>
         <Route path="/faq" component={Faq}/>
         <Route path="/pricing" component={Pricing}/>
