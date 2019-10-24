@@ -9,7 +9,7 @@ export default function Section1() {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 30px;
+        padding: 3em;
     `;
 
     const SubContainer = styled.div`
@@ -53,13 +53,18 @@ export default function Section1() {
         margin-bottom: 20px;
     `;
 
+    const Title = styled.h1`
+        padding-bottom: 20px;
+    `;
+
     return (
         <div>
             <Container>
+                <Title>Everything you need to know about BitKings Exchange.</Title>
                 {
                     section1.map(item => {
                         return(
-                        <SubContainer>
+                        <SubContainer key={item.index}>
                             <CircleContainer>
                                 <Circle>
                                 <div className="step">{item.index}</div>

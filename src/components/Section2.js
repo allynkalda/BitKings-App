@@ -10,7 +10,7 @@ export default function Section2() {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 30px;
+        padding: 0px 40px 0px 40px;
     `;
 
     const Box = styled.div`
@@ -18,7 +18,7 @@ export default function Section2() {
         justify-content: center;
         align-items: center;
         width: 15vw;
-        height: 15vh;
+        height: 20vh;
         box-shadow: 5px 8px 5px #888888;
         border-radius: 5px;
         color: white;
@@ -45,10 +45,20 @@ export default function Section2() {
         }
     `;
 
-    const [show, setShow] = useState(false);
+    const AccordionContainer = styled.div`
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0px 50px 0px;  
+    `;
 
-    const showAccordion = () => {
-        setShow(!show)
+    const [show, setShow] = useState(null);
+    const [chosen, setChosen] = useState(null);
+
+    const showAccordion = (num) => {
+        setShow(true);
+        setChosen(num);
     }
 
     return (
@@ -56,22 +66,27 @@ export default function Section2() {
             <Container>
                 {
                     section2 && section2.map(item => {
+                        const num = item.index
                         return (
-                            <Box onClick={() => showAccordion()}><p>{item.title}</p></Box>
+                            <Box key={item.index} 
+                            onClick={() => showAccordion(num)}><p>{item.title}</p></Box>
                         )
                     })
                 }
             </Container>
+            <AccordionContainer>
                 {
                     show ? (
-                        section2.map((item) => {
-                            const question = item.questions;
+                        section2[chosen] && section2[chosen].qa.map((qa, index) => {
                             return (
-                                <Section3 question={question}></Section3>
+                                <Section3 key={index} index={index} 
+                                    answer={qa.answer}
+                                    question={qa.question}></Section3>
                             )
                         })
                     ) : null
                 }
+            </AccordionContainer>
         </div>
     )
 }
