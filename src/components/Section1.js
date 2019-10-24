@@ -9,6 +9,7 @@ export default function Section1() {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        padding: 30px;
     `;
 
     const SubContainer = styled.div`

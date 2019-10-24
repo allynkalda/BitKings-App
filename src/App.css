@@ -3,24 +3,29 @@
   font-family: 'Gothic A1', sans-serif;
 }
 
-.box-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+.accordion {
+  width: 50vh;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: 0;
 }
 
-.box:nth-child(odd) {
-  background: #00b2e3;
+span {
+  float: right;
 }
 
-.box:nth-child(even) {
-  background: #44546A;
+.open {
+  display: block;
+  height: auto;
+  border-radius: 20px;
+  border: 0.5px solid rgb(199, 197, 197);
+  padding: 18px;
 }
 
-.box {
-  width: 15vw;
-  height: 15vh;
-  box-shadow: 5px 8px 5px #888888;
-  border-radius: 5px;
+.close {
+  display: none;
 }

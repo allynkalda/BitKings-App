@@ -27,8 +27,7 @@ export const section1 = [
   },
 ]
 
-export const section2 = {
-    "data": [
+export const section2 = [
         {
           "index": 1,
           "title": "I am a beginner",
@@ -82,5 +81,4 @@ export const section2 = {
           "What tools presented on BitKings Exchange assist my trading?"
           ]
         },
-      ]
-  };
+      ];
