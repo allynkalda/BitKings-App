@@ -1,4 +1,33 @@
-const faq = {
+
+export const section1 = [
+  { 
+    "index": 1,
+    "title": "Register and access to BitKings real balance.",
+    "body": "Registering is a simple process and completely for free. No strings attached."
+  },
+  { 
+    "index": 2,
+    "title": "Choose the most suitable trading screen: Easy or Pro.",
+    "body": "BitKings has developed two trading screens in order to facilitate trading to all the different crypto traders in the world. You can easily set the mode you prefer on the left column under “trade”. "
+  },
+  { 
+    "index": 3,
+    "title": "Buying cryptocurrencies with your credit card?",
+    "body": "You have come to the right place, simply use the Easy trading screen and select the cryptocurrency you want to purchase and enter your card details. You will instantly see how your pie chart rebalances and shows the newly purchased asset. As simple as that."
+  },
+  { 
+    "index": 4,
+    "title": "Are you unsure about trading cryptocurrencies?",
+    "body": "No issues whatsoever, BitKings has created a Virtual Balance screen where you can trade in a simulated way. Both Easy and Pro screens are available for you to trade with the initial simulated balance. Once you are confident enough to trade for real, simply switch to your real balance and start trading."
+  },
+  { 
+    "index": 5,
+    "title": "We are here to support you along the way.",
+    "body": "BitKings Exchange embraces conscious trading, for that, we have enabled a supporting section which contains not only the latest news on the crypto market, but also a shoutbox so that you can share your thoughts and doubts with the whole of BitKings Community. "
+  },
+]
+
+export const section2 = {
     "data": [
         {
           "index": 1,
@@ -54,4 +83,4 @@ const faq = {
           ]
         },
       ]
-  }
+  };
