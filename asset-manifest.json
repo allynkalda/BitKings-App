@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/BitKings-App/static/css/main.5fb65f45.chunk.css",
+    "main.js": "/BitKings-App/static/js/main.f437cec4.chunk.js",
+    "main.js.map": "/BitKings-App/static/js/main.f437cec4.chunk.js.map",
+    "runtime-main.js": "/BitKings-App/static/js/runtime-main.6641c1be.js",
+    "runtime-main.js.map": "/BitKings-App/static/js/runtime-main.6641c1be.js.map",
+    "static/js/2.d226a3e2.chunk.js": "/BitKings-App/static/js/2.d226a3e2.chunk.js",
+    "static/js/2.d226a3e2.chunk.js.map": "/BitKings-App/static/js/2.d226a3e2.chunk.js.map",
+    "index.html": "/BitKings-App/index.html",
+    "precache-manifest.bab10dd99ad48de456a75c8ef90e9e01.js": "/BitKings-App/precache-manifest.bab10dd99ad48de456a75c8ef90e9e01.js",
+    "service-worker.js": "/BitKings-App/service-worker.js",
+    "static/css/main.5fb65f45.chunk.css.map": "/BitKings-App/static/css/main.5fb65f45.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6641c1be.js",
+    "static/js/2.d226a3e2.chunk.js",
+    "static/css/main.5fb65f45.chunk.css",
+    "static/js/main.f437cec4.chunk.js"
+  ]
+}
