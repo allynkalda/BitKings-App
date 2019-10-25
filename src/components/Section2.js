@@ -17,12 +17,16 @@ export default function Section2() {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 15vw;
-        height: 20vh;
+        width: 50%;
         box-shadow: 5px 8px 5px #888888;
         border-radius: 5px;
         color: white;
         cursor: pointer;
+
+        &:after {
+            display: block;
+            padding-bottom: 100%;
+        }
 
         &:nth-child(odd) {
             background: #00b2e3;
