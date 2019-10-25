@@ -5,6 +5,7 @@
 
 .accordion {
   border: none;
+  background: white;
   border-bottom: 0.5px solid rgb(199, 197, 197);
   width: 100vh;
   cursor: pointer;
