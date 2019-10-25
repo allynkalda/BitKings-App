@@ -27,11 +27,11 @@ const ContentBox = styled.div`
   }
 `;
 
-export default function Section3(props) {
+const Arrow = styled.span`
+float: right;
+`;
 
-    const Arrow = styled.span`
-        float: right;
-    `;
+export default function Section3(props) {
 
     const [toggle, setToggle] = useState(false);
 
