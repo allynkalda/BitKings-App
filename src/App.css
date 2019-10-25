@@ -3,22 +3,8 @@
   font-family: 'Gothic A1', sans-serif;
 }
 
-.accordion {
-  border: none;
-  background: white;
-  border-bottom: 0.5px solid rgb(199, 197, 197);
-  width: 100vh;
-  cursor: pointer;
-  padding: 18px;
-  text-align: left;
-  font-size: 1.2rem;
-  font-weight: bold;
-  outline: 0;
-}
 
-span {
-  float: right;
-}
+
 
 .open {
   display: block;
