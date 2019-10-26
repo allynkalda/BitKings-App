@@ -15,8 +15,8 @@ const Accordion = styled.button`
 `;
 
 const ContentBox = styled.div`
-    width: 80vh;
-    line-height: 150%;
+    width: 70vw;
+    line-height: 200%;
 `;
 
 const Arrow = styled.span`

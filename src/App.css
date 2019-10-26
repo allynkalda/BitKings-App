@@ -22,7 +22,22 @@ li, ol {
   text-align: left;
 }
 
-.img-text {
+.img-small {
+  width: 30vw;
+  margin: 0 auto;
+  display: block;
+  padding: 20px 0px 20px 0px;
+}
+
+.img-medium {
+  width: 50vw;
+  margin: 0 auto;
+  display: block;
+  padding: 20px 0px 20px 0px;
+}
+
+.img-tiny {
+  width: 10vw;
   margin: 0 auto;
   display: block;
   padding: 20px 0px 20px 0px;
