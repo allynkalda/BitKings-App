@@ -49,6 +49,10 @@ align-self: baseline;
 text-align: left;
 margin-top: -10px;
 margin-bottom: 20px;
+
+@media (max-width: 768px) {
+    margin-left: 20px;
+  }
 `;
 
 const Title = styled.h1`
@@ -58,7 +62,6 @@ padding-bottom: 20px;
 export default function Section1() {
 
     return (
-        <div>
             <Container>
                 <Title>Everything you need to know about BitKings Exchange.</Title>
                 {
@@ -80,6 +83,6 @@ export default function Section1() {
                     })
                 }
         </Container>
-        </div>
+
     )
 }

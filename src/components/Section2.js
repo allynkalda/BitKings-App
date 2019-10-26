@@ -6,23 +6,25 @@ import Section3 from './Section3';
 
 const Container = styled.div`
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 0px 40px 0px 40px;
+        padding: 0px 3em 0px 3em;
     `;
 
 const Box = styled.div`
     display: flex;
+    margin: 1em;
     justify-content: center;
     align-items: center;
-    width: 15vw;
-    height: 17vh;
+    width: 8em;
+    height: 8em;
+    padding: 
     box-shadow: 5px 8px 5px #888888;
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    padding: 10px;
 
         &:nth-child(odd) {
             background: #00b2e3;
@@ -44,6 +46,10 @@ const Box = styled.div`
             -ms-transition:transform 0.3s ease-in-out;
         }
     `;
+
+const ItemText = styled.p`
+    margin: 0px 10px 0px 10px
+`;
 
 const AccordionContainer = styled.div`
     display: flex;
@@ -71,7 +77,8 @@ export default function Section2() {
                         const num = item.index
                         return (
                             <Box key={item.index} 
-                            onClick={() => showAccordion(num)}><p>{item.title}</p></Box>
+                            onClick={() => showAccordion(num)}>
+                            <ItemText>{item.title}</ItemText></Box>
                         )
                     })
                 }
