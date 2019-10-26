@@ -88,14 +88,14 @@ export const section2 = [
               <li>The first thing you need to do is to log in on www.bitkings.com</li>
               <li>Decide whether you trade using the Easy or Pro screen. The first thing you have to decide is whether you will be using the Easy or the Pro screen. For crypto beginners, or if you just would like to trade in a simple way, we recommend you use the Easy screen as you will be trading following really simple steps.</li>
                   <ol>
-                    <li>If you have decided to use the Easy screen, you now have to press the convert option.</li>
+                    <p>A1. If you have decided to use the Easy screen, you now have to press the convert option.</p>
                     <li>Now, select the asset you would like to trade.</li>
                     <li>Then, enter the amount of such asset you would like to trade.</li>
                     <li>The last step is to select the asset you would that amount to be traded for.</li>
                     <li>Then, press the convert button in the middle to execute the conversion.</li>
                   </ol>
                   <ol>
-                    <li>If you have decided to use the Pro screen you can follow the next steps:</li>
+                    <p>A2. If you have decided to use the Pro screen you can follow the next steps:</p>
                     <li>Select the par you are willing to trade with on the top left market area.</li>
                     <li>Then, you can check the market evolution of such par on the graph in the middle and the prices in the order books on the top right hand side.</li>
                     <li>The Buy and Sell area is found on the bottom right area of the trading page, there, you can set a market or limit order, enter the amount you are willing to purchase and then press the final Buy/Sell button once you are ready to execute the transaction.</li>

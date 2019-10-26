@@ -14,7 +14,12 @@
   display: none;
 }
 
-li, ol {
+ol {
+  text-align: left;
+  margin-bottom: 0.8em;
+}
+
+li {
   text-align: left;
 }
 
