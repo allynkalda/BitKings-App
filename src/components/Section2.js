@@ -18,8 +18,8 @@ const Box = styled.div`
     margin: 1em;
     justify-content: center;
     align-items: center;
-    width: 8em;
-    height: 8em;
+    width: 9em;
+    height: 9em;
     padding: 
     box-shadow: 5px 8px 5px #888888;
     border-radius: 5px;
@@ -48,7 +48,9 @@ const Box = styled.div`
     `;
 
 const ItemText = styled.p`
-    margin: 0px 10px 0px 10px
+    margin: 0px 10px 0px 10px;
+    font-family: 'Agenda', san-serif;
+    font-size: 1.3em;
 `;
 
 const AccordionContainer = styled.div`
@@ -56,7 +58,8 @@ const AccordionContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 0px 50px 0px;  
+    width: 100%
+    padding: 2em 0px 2em 0px;  
     `;
 
 export default function Section2() {

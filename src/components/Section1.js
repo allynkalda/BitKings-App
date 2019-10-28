@@ -56,7 +56,8 @@ margin-bottom: 20px;
 `;
 
 const Title = styled.h1`
-padding-bottom: 20px;
+    padding-bottom: 20px;
+    font-family: 'Agenda', san-serif;
 `;
 
 export default function Section1() {

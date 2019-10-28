@@ -5,7 +5,6 @@ const Accordion = styled.button`
     border: none;
     background: white;
     border-bottom: 0.5px solid rgb(199, 197, 197);
-    width: 100vh;
     cursor: pointer;
     padding: 18px;
     text-align: left;
@@ -21,6 +20,7 @@ const ContentBox = styled.div`
 
 const Arrow = styled.span`
     float: right;
+    padding-left: 1em;
 `;
 
 export default function Section3(props) {
