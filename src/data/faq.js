@@ -205,15 +205,15 @@ export const section2 = [
             <ol>
               <li>Click Settings on the left menu column.</li>
               <li>Select Security and Google Authenticator. </li>
-              <img class="img-small" src='/images/question-12/image-1.png' />
+              <img class="img-small" src='./images/question-12/image-1.png' />
               <li>If you do not have the Google Authenticator App, you can download it by clicking on the buttons Download on the App Store and Get it on Google Play.</li>
-              <img class="img-medium" src='/images/question-12/image-2.png' />
+              <img class="img-medium" src='./images/question-12/image-2.png' />
               <li>When you have the Google Authenticator App or If you do have it already, press next and Scan the QR code on the screen using the Google Authenticator App.</li>
-              <img class="img-medium" src='/images/question-12/image-3.png' />
+              <img class="img-medium" src='./images/question-12/image-3.png' />
               <li>The system will generate Key that will be used to recover your Google Authenticator in case you lose your phone. You should store this in a safe place and press Next.</li>
-              <img class="img-medium" src='/images/question-12/image-4.png' />
+              <img class="img-medium" src='./images/question-12/image-4.png' />
               <li>Then, the last step is to enable the Two-Factor Authentication (2FA) by entering your Login Password and your Two-Factor Authentication. Once you submit this information, the 2FA will be enabled and will be required for login onto BitKings Exchange.</li>
-              <img class="img-medium" src='/images/question-12/image-5.png' />
+              <img class="img-medium" src='./images/question-12/image-5.png' />
             </ol>`
           },
           {
@@ -222,10 +222,10 @@ export const section2 = [
             "answer": `<p class="p-text">In order to disable the 2FA, you have to:</p>
             <ol>
               <li>Click on Settings on the left menu and select Security </li>
-              <img class="img-small" src='/images/question-13/image-1.png' />
+              <img class="img-small" src='./images/question-13/image-1.png' />
               <li>Select Google Authenticator</li>
               <li>Enter your login password and the Two-Factor authentication and press Disable.</li>
-              <img class="img-medium" src='/images/question-13/image-2.png' />
+              <img class="img-medium" src='./images/question-13/image-2.png' />
               <li>Switch on the right has turned grey and shows Disabled.</li>
             </ol>
             <p class="p-text">We strongly recommend that you set up the Two-Factor Authenticator to enhance the security level of your account. </p>`
