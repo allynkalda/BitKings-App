@@ -39,13 +39,13 @@ export const section2 = [
               <ol>
                 <li>Go onto www.bitkings.com</li>
                 <li>Fill in the registration box with your email address and your chosen password and press Next, or, you can also register using your Google or Facebook’s details.</li>
-                <img class="img-small" src='/images/question-0/image-1.png' />
+                <img class="img-small" src='./images/question-0/image-1.png' />
                 <li>Then, enter the Alias or username you would like to show up on your profile and, if applicable, enter the referral code obtained from a friend. Do not forget to click the Terms of Use, Privacy Policy and Cookie Use Box before you press Next.</li>
-                <img class="img-small" src='/images/question-0/image-2.png' />
+                <img class="img-small" src='./images/question-0/image-2.png' />
                 <li>Check your inbox as we will have sent you an email confirmation. At this stage you are still able to change the email you would like to register with.</li>
-                <img class="img-small" src='/images/question-0/image-3.png' />
+                <img class="img-small" src='./images/question-0/image-3.png' />
                 <li>Once you have clicked on the verification link in your email, you are ready to log in!</li>
-                <img class="img-medium" src='/images/question-0/image-4.png' />
+                <img class="img-medium" src='./images/question-0/image-4.png' />
                 <li>For your own account security, we recommend enabling two-factor authentication (2FA).</li>
               </ol>`
             },
