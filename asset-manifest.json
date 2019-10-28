@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/BitKings-App/static/css/main.1d0b0db2.chunk.css",
-    "main.js": "/BitKings-App/static/js/main.bc12e68e.chunk.js",
-    "main.js.map": "/BitKings-App/static/js/main.bc12e68e.chunk.js.map",
+    "main.js": "/BitKings-App/static/js/main.77ca0bf0.chunk.js",
+    "main.js.map": "/BitKings-App/static/js/main.77ca0bf0.chunk.js.map",
     "runtime-main.js": "/BitKings-App/static/js/runtime-main.6641c1be.js",
     "runtime-main.js.map": "/BitKings-App/static/js/runtime-main.6641c1be.js.map",
     "static/js/2.428e17d5.chunk.js": "/BitKings-App/static/js/2.428e17d5.chunk.js",
     "static/js/2.428e17d5.chunk.js.map": "/BitKings-App/static/js/2.428e17d5.chunk.js.map",
     "index.html": "/BitKings-App/index.html",
-    "precache-manifest.958befe5af4cfbaf9499375fe91eb94f.js": "/BitKings-App/precache-manifest.958befe5af4cfbaf9499375fe91eb94f.js",
+    "precache-manifest.c20e4f30df39c58fb3bc91b5a5638636.js": "/BitKings-App/precache-manifest.c20e4f30df39c58fb3bc91b5a5638636.js",
     "service-worker.js": "/BitKings-App/service-worker.js",
     "static/css/main.1d0b0db2.chunk.css.map": "/BitKings-App/static/css/main.1d0b0db2.chunk.css.map",
     "static/media/App.css": "/BitKings-App/static/media/agenda-light.05988561.woff"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.6641c1be.js",
     "static/js/2.428e17d5.chunk.js",
     "static/css/main.1d0b0db2.chunk.css",
-    "static/js/main.bc12e68e.chunk.js"
+    "static/js/main.77ca0bf0.chunk.js"
   ]
 }
