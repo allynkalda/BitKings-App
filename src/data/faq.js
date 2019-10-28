@@ -55,13 +55,13 @@ export const section2 = [
               "answer": `<p class="p-text">Please follow the following steps to purchase crypto on your credit card:</p>
               <ol>
                 <li>Log in on BitKings Exchange using your registered email and password.</li>
-                <img class="img-medium" src='/images/question-1/image-1.png' />
+                <img class="img-medium" src='./images/question-1/image-1.png' />
                 <li>Enter your 2 Factor Authentication (if applicable).</li>
-                <img class="img-small" src='/images/question-1/image-2.png' />
+                <img class="img-small" src='./images/question-1/image-2.png' />
                 <li>Select Easy trading Mode below Trade Menu (in the column menu on the left)</li>
-                <img class="img-tiny" src='/images/question-1/image-3.png' />
+                <img class="img-tiny" src='./images/question-1/image-3.png' />
                 <li>Once the Easy screen is displayed, select Card purchase.</li>
-                <img class="img-small" src='/images/question-1/image-4.png' />
+                <img class="img-small" src='./images/question-1/image-4.png' />
                 <li>Select the cryptocurrency you are willing to purchase, enter the amount you want to purchase and press Buy.</li>
                 <li>You will then be addressed to a new screen where you can enter your card details and execute the payments.</li>
               </ol>`
@@ -72,11 +72,11 @@ export const section2 = [
               "answer": `<ol>
               <li>The first thing to do is to log in on www.bitkings.com</li>
               <li>Once you are logged in, go onto My Assets and find the currency you would like to deposit (here we are using BTC as an example). Once you have found the currency you want to deposit, click on the Deposit option on the right hand site.</li>
-              <img class="img-medium" src='/images/question-2/image-1.png' />
+              <img class="img-medium" src='./images/question-2/image-1.png' />
               <li>Then, BitKings will automatically generate and address where you can deposit the funds. </li>
-              <img class="img-small" src='/images/question-2/image-2.png' />
+              <img class="img-small" src='./images/question-2/image-2.png' />
               <li>After you successfully deposit the funds on the generated address, you can go back to BitKings Exchange Dashboard and your portfolio will display the deposited asset. </li>
-              <img class="img-medium" src='/images/question-2/image-3.png' />
+              <img class="img-medium" src='./images/question-2/image-3.png' />
               <li>Please make sure you are depositing the right currency on the generated address and enter such address accurate and correctly.</li>
               <p class="p-text">Also, please note that you can deposit funds using both Easy and Pro screens by following the same steps. </p>
             </ol>`
@@ -109,12 +109,12 @@ export const section2 = [
               "answer": `<ol>
               <li>Please log in to your BitKings Exchange accounts and go to Settings on the left hand side menu.</li>
               <li>After that, select API Settings from the list.</li>
-              <img class="img-small" src='/images/question-4/image-1.png' />
+              <img class="img-small" src='./images/question-4/image-1.png' />
               <li>Press New Key and the system will generate a New Key.</li>
-              <img class="img-small" src='/images/question-4/image-2.png' />
+              <img class="img-small" src='./images/question-4/image-2.png' />
               <li>Fill in the “Google Authentication Code” to confirm API Key creation for your account.</li>
               <li>You can also delete and manage the generated keys in this section.</li>
-              <img class="img-medium" src='/images/question-4/image-3.png' />
+              <img class="img-medium" src='./images/question-4/image-3.png' />
             </ol>
             <p class="p-text">Remember to store your Secret Key somewhere safe and ensure you do not share this key with anyone else. If such key is lost or forgotten, you would need to delete this API and re-create a new one.</p>`
             },
@@ -124,13 +124,13 @@ export const section2 = [
               "answer": `<ol>
               <li>Please log in to your BitKings Exchange accounts and go to Settings on the left hand side menu.</li>
               <li>After that, select Bonus and Referrals from the list.</li>
-              <img class="img-tiny" src='/images/question-5/image-1.png' />
+              <img class="img-tiny" src='./images/question-5/image-1.png' />
               <li>This section displays your Personal Referral Code, please send this code to your friends and get rewarded every time somebody uses it to register and verifies his/her profile.</li>
-              <img class="img-small" src='/images/question-5/image-2.png' />
+              <img class="img-small" src='./images/question-5/image-2.png' />
               <li>This section displays your current status on the vigent bounty programs, Referrals, BitKings Heroes, Large Volume Trade Effort.</li>
-              <img class="img-medium" src='/images/question-5/image-3.png' />
+              <img class="img-medium" src='./images/question-5/image-3.png' />
               <li>This section also shows how many BTKs you have been rewarded since registration through the different Bounty Programs. </li>
-              <img class="img-medium" src='/images/question-5/image-4.png' />
+              <img class="img-medium" src='./images/question-5/image-4.png' />
             </ol>`
             }
             ],
@@ -146,17 +146,17 @@ export const section2 = [
             <ol>
               <li>Please visit BitKings Exchange website at www.bitkings.com and Log In to your account.</li>
               <li>Once logged in, go to Settings on the left hand side menu and Select My Profile (Tier 1).</li>
-              <img class="img-small" src='/images/question-6/image-1.png' />
+              <img class="img-small" src='./images/question-6/image-1.png' />
               <li>Please fill in the blank boxes with your personal information and press Update once finished.</li>
-              <img class="img-medium" src='/images/question-6/image-2.png' />
+              <img class="img-medium" src='./images/question-6/image-2.png' />
               <li>Then, click on KYC (Tier 2).</li>
-              <img class="img-small" src='/images/question-6/image-3.png' />
+              <img class="img-small" src='./images/question-6/image-3.png' />
               <li>Fill in the information required with regards to your Country Information, Personal Information, Contact Information, Proof Of Address and ID Verification.</li>
-              <img class="img-medium" src='/images/question-6/image-4.png' />
+              <img class="img-medium" src='./images/question-6/image-4.png' />
               <li>Now it is time to submit your selected ID pictures.</li>
-              <img class="img-medium" src='/images/question-6/image-5.png' />
+              <img class="img-medium" src='./images/question-6/image-5.png' />
               <li>Once this is complete, do not forget to read and agree to the Terms and Conditions and tick the box on the left hand side and press the Submit button.</li>
-              <img class="img-medium" src='/images/question-6/image-6.png' />
+              <img class="img-medium" src='./images/question-6/image-6.png' />
             </ol>
             <p class"p-text">Remember that for you to benefit from a Referral Code bonus, the new user registering with your referral code must complete this Tier 2 Verification Level.</p>`
           },
