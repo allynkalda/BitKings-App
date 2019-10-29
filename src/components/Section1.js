@@ -25,12 +25,14 @@ const Circle = styled.div`
 position: relative;
 border: 2px solid #00b2e3; 
 border-radius: 100%; 
-width: 3em; 
-line-height: 3em; 
+width: 2em; 
+line-height: 2em; 
 text-align: center; 
 background-color: #fff; 
 z-index: 2;
 align-self: center;
+font-size: 1.5em;
+font-weight: bold;
 `;
 
 const Line = styled.div`
