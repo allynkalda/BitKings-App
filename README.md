@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Deployed here: https://allynkalda.github.io/BitKings-App/
+
 ## FAQ Page - found in /faq
 ## Pricing Page - found in /pricing
 
