@@ -7,7 +7,12 @@ display:flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
-padding: 3em;
+padding: 0 1em 0 1em;
+
+
+@media (min-width: 1100px) {
+    height: 90vh;
+  }
 `;
 
 const SubContainer = styled.div`
@@ -19,14 +24,15 @@ const CircleContainer = styled.div`
 display:flex;
 flex-direction: column;
 width: 10vw;
+margin-top: -0.5em;
 `;
 
 const Circle = styled.div`
 position: relative;
 border: 2px solid #00b2e3; 
 border-radius: 100%; 
-width: 2em; 
-line-height: 2em; 
+width: 1.5em; 
+line-height: 1.5em; 
 text-align: center; 
 background-color: #fff; 
 z-index: 2;
@@ -50,7 +56,6 @@ width: 70vw;
 align-self: baseline;
 text-align: left;
 margin-top: -10px;
-margin-bottom: 20px;
 
 @media (max-width: 768px) {
     margin-left: 20px;
@@ -58,8 +63,15 @@ margin-bottom: 20px;
 `;
 
 const Title = styled.h1`
-    padding-bottom: 20px;
+    margin: 0px;
+    text-align: center;
+    font-size: 1.8em;
+    padding-bottom: 0.7em;
     font-family: 'Agenda', san-serif;
+`;
+
+const H3 = styled.h3`
+    margin: 0px;
 `;
 
 export default function Section1() {
@@ -78,7 +90,7 @@ export default function Section1() {
                                 {item.index == section1.length ? <LineLast></LineLast> : <Line></Line>}
                             </CircleContainer>
                             <Text>
-                                <h3>{item.title}</h3>
+                                <H3>{item.title}</H3>
                                 <p>{item.body}</p>
                             </Text>
                         </SubContainer>

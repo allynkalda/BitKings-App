@@ -5,12 +5,17 @@ import Section3 from './Section3';
 
 
 const Container = styled.div`
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 0px 7em 0px 7em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 7em 0px 7em;
+    
+    
+    @media (min-width: 1100px) {
+        height: 10vh;
+      }
     `;
 
 const Box = styled.div`
@@ -18,13 +23,22 @@ const Box = styled.div`
     margin: 1em;
     justify-content: center;
     align-items: center;
-    width: 9em;
-    height: 9em;
+    width: 8em;
+    height: 8em;
     padding: 
     box-shadow: 5px 8px 5px #888888;
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    font-weight: bold;
+
+        &.large {
+            -moz-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+        }
 
         &:nth-child(odd) {
             background: #00b2e3;
@@ -35,11 +49,11 @@ const Box = styled.div`
           }
 
         &:hover {
-            -moz-transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-            -o-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            transform: scale(1.1);
+            -moz-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
 
             -webkit-transition: transform 0.3s ease-in-out;
             -moz-transition:transform 0.3s ease-in-out;
@@ -51,15 +65,16 @@ const ItemText = styled.p`
     margin: 0px 10px 0px 10px;
     font-family: 'Agenda', san-serif;
     font-size: 1.3em;
+    text-align: center;
 `;
 
 const AccordionContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%
-    padding: 2em 0px 2em 0px;  
+    padding: 4em 8em 0px 9em; 
     `;
 
 export default function Section2() {
@@ -80,6 +95,7 @@ export default function Section2() {
                         const num = item.index
                         return (
                             <Box key={item.index} 
+                            className={chosen === num ? 'large' : ''}
                             onClick={() => showAccordion(num)}>
                             <ItemText>{item.title}</ItemText></Box>
                         )
