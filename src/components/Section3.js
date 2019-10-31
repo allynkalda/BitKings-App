@@ -11,6 +11,7 @@ const Accordion = styled.button`
     font-size: 1.2rem;
     font-weight: bold;
     outline: 0;
+    width: 55vw;
 `;
 
 const ContentBox = styled.div`
