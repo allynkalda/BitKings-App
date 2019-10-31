@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 import { section2 } from '../data/faq';
 import Section3 from './Section3';
-
+import { animateScroll as scroll } from 'react-scroll'
 
 const Container = styled.div`
     display: flex;
@@ -20,7 +20,7 @@ const Box = styled.div`
     align-items: center;
     width: 8em;
     height: 8em;
-    padding: 
+    padding: 10px;
     box-shadow: 5px 8px 5px #888888;
     border-radius: 5px;
     color: white;
@@ -68,7 +68,7 @@ const AccordionContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 100%
+    width: 100%;
     padding: 4em 8em 0px 9em; 
     `;
 
@@ -80,6 +80,7 @@ export default function Section2() {
     const showAccordion = (num) => {
         setShow(true);
         setChosen(num);
+        scroll.scrollToBottom();
     }
 
     return (

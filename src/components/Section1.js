@@ -48,6 +48,7 @@ display:none;
 `;
 
 const Text = styled.div`
+font-family: 'Gothic A1', sans-serif;
 width: 70vw;
 align-self: baseline;
 text-align: left;
