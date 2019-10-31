@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ae260cbae2331176894a039bd20abbcb",
+    "revision": "86914bec2d0e29b4a4f7c3c35afb3556",
     "url": "/BitKings-App/index.html"
   },
   {
-    "revision": "c41cfe54c48e27abcd71",
-    "url": "/BitKings-App/static/css/main.df08cd32.chunk.css"
+    "revision": "cca6b1349dd2797c3cad",
+    "url": "/BitKings-App/static/css/main.3e8a276f.chunk.css"
   },
   {
-    "revision": "b6e839576b96179f4c8e",
-    "url": "/BitKings-App/static/js/2.428e17d5.chunk.js"
+    "revision": "8ef14677a92f283fdb41",
+    "url": "/BitKings-App/static/js/2.0ce6ae67.chunk.js"
   },
   {
-    "revision": "c41cfe54c48e27abcd71",
-    "url": "/BitKings-App/static/js/main.f96c5e7f.chunk.js"
+    "revision": "cca6b1349dd2797c3cad",
+    "url": "/BitKings-App/static/js/main.8314d56a.chunk.js"
   },
   {
     "revision": "3dee83ef49266e860644",
