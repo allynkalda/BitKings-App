@@ -12,6 +12,7 @@ const Accordion = styled.button`
     font-weight: bold;
     outline: 0;
     width: 55vw;
+    font-family: 'Gothic A1', sans-serif;
 `;
 
 const ContentBox = styled.div`

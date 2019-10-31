@@ -8,8 +8,6 @@ flex-direction: column;
 justify-content: space-between;
 align-items: center;
 padding: 0 1em 0 1em;
-
-
 `;
 
 const SubContainer = styled.div`
@@ -27,8 +25,8 @@ const Circle = styled.div`
 position: relative;
 border: 2px solid #00b2e3; 
 border-radius: 100%; 
-width: 1.5em; 
-line-height: 1.5em; 
+width: 1.7em; 
+line-height: 1.7em; 
 text-align: center; 
 background-color: #fff; 
 z-index: 2;
