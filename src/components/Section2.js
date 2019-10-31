@@ -11,11 +11,6 @@ const Container = styled.div`
     justify-content: space-around;
     align-items: center;
     padding: 0px 7em 0px 7em;
-    
-    
-    @media (min-width: 1100px) {
-        height: 10vh;
-      }
     `;
 
 const Box = styled.div`

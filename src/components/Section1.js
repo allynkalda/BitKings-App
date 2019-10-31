@@ -10,9 +10,6 @@ align-items: center;
 padding: 0 1em 0 1em;
 
 
-@media (min-width: 1100px) {
-    height: 90vh;
-  }
 `;
 
 const SubContainer = styled.div`
@@ -24,7 +21,6 @@ const CircleContainer = styled.div`
 display:flex;
 flex-direction: column;
 width: 10vw;
-margin-top: -0.5em;
 `;
 
 const Circle = styled.div`
@@ -55,7 +51,6 @@ const Text = styled.div`
 width: 70vw;
 align-self: baseline;
 text-align: left;
-margin-top: -10px;
 
 @media (max-width: 768px) {
     margin-left: 20px;
@@ -63,7 +58,6 @@ margin-top: -10px;
 `;
 
 const Title = styled.h1`
-    margin: 0px;
     text-align: center;
     font-size: 1.8em;
     padding-bottom: 0.7em;
@@ -71,7 +65,7 @@ const Title = styled.h1`
 `;
 
 const H3 = styled.h3`
-    margin: 0px;
+    line-height: 0px;
 `;
 
 export default function Section1() {
