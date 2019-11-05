@@ -27,7 +27,23 @@ const Arrow = styled.span`
 
 export default function Section3(props) {
 
-    const [toggle, setToggle] = useState(false);
+    const [toggle, setToggle] = useState(false);    
+
+    const toggleFalse = () => {
+        if (toggle === true) {
+        setToggle(false);
+        }
+    }
+
+    const [oldChosen, setOldChosen] = useState(false); 
+
+    React.useEffect(() => {
+        setOldChosen(props.chosen)
+        if (oldChosen !== props.chosen) {
+            setToggle(false);
+        }
+    })
+
 
     const toggleComponent = () => {
         setToggle(!toggle);

@@ -77,11 +77,14 @@ export default function Section2() {
     const [show, setShow] = useState(null);
     const [chosen, setChosen] = useState(null);
 
+
     const showAccordion = (num) => {
         setShow(true);
         setChosen(num);
         scroll.scrollToBottom();
     }
+
+    const question = section2[chosen] && section2[chosen].qa;
 
     return (
         <div>
@@ -101,10 +104,10 @@ export default function Section2() {
             <AccordionContainer>
                 {
                     show ? (
-                        section2[chosen] && section2[chosen].qa.map((qa, index) => {
+                        question.map((qa, index) => {
                             return (
                                 <Section3 key={index} index={index} 
-                                    answer={qa.answer}
+                                    answer={qa.answer} chosen={chosen}
                                     question={qa.question}></Section3>
                             )
                         })
