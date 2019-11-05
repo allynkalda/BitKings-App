@@ -39,6 +39,8 @@ export default function Section3(props) {
 
     React.useEffect(() => {
         setOldChosen(props.chosen)
+        console.log(props.chosen)
+        console.log(oldChosen)
         if (oldChosen !== props.chosen) {
             setToggle(false);
         }
