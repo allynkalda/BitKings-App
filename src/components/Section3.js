@@ -22,7 +22,7 @@ const ContentBox = styled.div`
 
 const Arrow = styled.span`
     float: right;
-    padding-left: 1em;
+    padding-left: 2em;
 `;
 
 export default function Section3(props) {
@@ -37,7 +37,7 @@ export default function Section3(props) {
         if (oldChosen !== props.chosen) {
             setToggle(false);
         }
-    })
+    }, [props.chosen, oldChosen])
 
 
     const toggleComponent = () => {
