@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { section1 } from '../data/faq.js';
+import Title from './atoms/Title'
 
 const Container = styled.div`
 display:flex;
@@ -56,13 +57,6 @@ text-align: left;
   }
 `;
 
-const Title = styled.h1`
-    text-align: center;
-    font-size: 1.8em;
-    padding-bottom: 0.7em;
-    font-family: 'Agenda', san-serif;
-`;
-
 const H3 = styled.h3`
     line-height: 0px;
 `;
@@ -71,7 +65,7 @@ export default function Section1() {
 
     return (
             <Container>
-                <Title>Everything you need to know about BitKings Exchange.</Title>
+                <Title title={`Everything you need to know about BitKings Exchange.`} />
                 {
                     section1.map(item => {
                         return(
