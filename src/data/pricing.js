@@ -39,7 +39,7 @@ export const pricing = [
                 "header": "VIP Users Table:"
             }
         ],
-        "table": [
+        "table1": [
             {
                 "Tier": "Nor.0",
                 "BTK Balance": "BTK < 200,000",
@@ -58,14 +58,143 @@ export const pricing = [
                 "Taker (Using BTK)": "0.11%",
                 "AVG": "0.16%"
             },
-
-
+            {
+                "Tier": "Nor.2",
+                "BTK Balance": "2,000,000 < BTK < 10,000,000",
+                "Maker": "0.15%",
+                "Maker (Using BTK)": "0.08%",
+                "Taker": "0.18%",
+                "Taker (Using BTK)": "0.09%",
+                "AVG": "0.12%"
+            },
+            {
+                "Tier": "Nor.3",
+                "BTK Balance": "10,000,000 < BTK < 50,000,000",
+                "Maker": "0.10%",
+                "Maker (Using BTK)": "0.05%",
+                "Taker": "0.15%",
+                "Taker (Using BTK)": "0.08%",
+                "AVG": "0.09%"
+            },
+            {
+                "Tier": "Nor.4",
+                "BTK Balance": "50,000,000 < BTK < 100,000,000",
+                "Maker": "0%",
+                "Maker (Using BTK)": "0%",
+                "Taker": "0.12%",
+                "Taker (Using BTK)": "0.06%",
+                "AVG": "0.05%"
+            },
+            {
+                "Tier": "",
+                "BTK Balance": "100,000,000 < BTK",
+                "Maker": "0%",
+                "Maker (Using BTK)": "0%",
+                "Taker": "0.08%",
+                "Taker (Using BTK)": "0.04%",
+                "AVG": "0.03%"
+            },
+            {
+                "Tier": "AVG",
+                "BTK Balance": "",
+                "Maker": "0.11%",
+                "Maker (Using BTK)": "0.05%",
+                "Taker": "0.17%",
+                "Taker (Using BTK)": "0.08%",
+                "AVG": "0.10%"
+            },
         ],
+        "table2": [
+            {
+                "Tier": "VIP.0",
+                "BTK Balance": "BTK < 200,000",
+                "BTC Volume (30 Days Trade Volume)": "< 20 K USD",
+                "Maker": "0.15%",
+                "Maker (Using BTK)": "0.08%",
+                "Taker": "0.20%",
+                "Taker (Using BTK)": "0.10%",
+                "AVG": "0.13%"
+            },
+            {
+                "Tier": "VIP.1",
+                "BTK Balance": "200,000 < BTK < 2,000,000",
+                "BTC Volume (30 Days Trade Volume)": "< 1 M USD",
+                "Maker": "0.08%",
+                "Maker (Using BTK)": "0.04%",
+                "Taker": "0.18%",
+                "Taker (Using BTK)": "0.09%",
+                "AVG": "0.10%"
+            },
+            {
+                "Tier": "VIP.2",
+                "BTK Balance": "2,000,000 < BTK < 10,000,000",
+                "BTC Volume (30 Days Trade Volume)": "< 2.5 M USD",
+                "Maker": "0.05%",
+                "Maker (Using BTK)": "0.03%",
+                "Taker": "0.14%",
+                "Taker (Using BTK)": "0.07%",
+                "AVG": "0.07%"
+            },
+            {
+                "Tier": "VIP.3",
+                "BTK Balance": "10,000,000 < BTK < 50,000,000",
+                "BTC Volume (30 Days Trade Volume)": "< 5 M USD",
+                "Maker": "0.02%",
+                "Maker (Using BTK)": "0.01%",
+                "Taker": "0.12%",
+                "Taker (Using BTK)": "0.06%",
+                "AVG": "0.05%"
+            },
+            {
+                "Tier": "VIP.4",
+                "BTK Balance": "50,000,000 < BTK < 100,000,000",
+                "BTC Volume (30 Days Trade Volume)": "< 10 M USD",
+                "Maker": "0%",
+                "Maker (Using BTK)": "0%",
+                "Taker": "0.10%",
+                "Taker (Using BTK)": "0.05%",
+                "AVG": "0.04%"
+            },
+            {
+                "Tier": "VIP.5",
+                "BTK Balance": "100,000,000 < BTK",
+                "BTC Volume (30 Days Trade Volume)": "< 20 M USD",
+                "Maker": "0%",
+                "Maker (Using BTK)": "0%",
+                "Taker": "0.06%",
+                "Taker (Using BTK)": "0.03%",
+                "AVG": "0.02%"
+            },
+            {
+                "Tier": "AVG",
+                "BTK Balance": "",
+                "BTC Volume (30 Days Trade Volume)": "",
+                "Maker": "0.05%",
+                "Maker (Using BTK)": "0.03%",
+                "Taker": "0.13%",
+                "Taker (Using BTK)": "0.07%",
+                "AVG": "0.07%"
+            },
+        ],
+        "footer": "Please note that the minimum applicable fee will be $0.50 for Normal Users. Moreover, if the user has not enough BTK to reach Tier Nor.1 and has enabled the “50% fees discounted using BTK” switch, then the system will automatically buy BTK through the secondary market to reach Nor.1 BTK holding requirements. Please note that VIP Users are exempt of paying fees."
       },
       { 
         "index": 2,
         "title": "Deposit & Withdrawal Fees",
-        "body": "BitKings has developed two trading screens in order to facilitate trading to all the different crypto traders in the world. You can easily set the mode you prefer on the left column under “trade”. "
+        "body": "Please see the following table regarding the applicable fees when depositing and withdrawing funds from BitKings Exchange.",
+        "header": "Deposit & Withdrawal Fees",
+        "table": [
+            {
+                "Type": "Deposit",
+                "Fiat": "Free",
+                "Crypto": "Free"
+            },
+            {
+                "Type": "Withdrawal",
+                "Fiat": "(1)",
+                "Crypto": "Free"
+            },
+        ],
       },
 
 ]
