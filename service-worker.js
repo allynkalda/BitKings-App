@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/BitKings-App/precache-manifest.e6fa002c3c2102c671f67da2bfed5945.js"
+  "/BitKings-App/precache-manifest.6d8b14efa300fda513827ea751ffb225.js"
 );
 
 self.addEventListener('message', (event) => {
