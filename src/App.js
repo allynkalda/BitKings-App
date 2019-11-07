@@ -10,7 +10,7 @@ function App() {
       <Switch>
         <Route path="/faq" component={Faq}/>
         <Route path="/pricing" component={Pricing}/>
-        <Faq></Faq>
+        <Pricing></Pricing>
       </Switch>
     </div>
   );

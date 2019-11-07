@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Box(props) {
+export default function Box({ width, height, num, chosen, title, showAccordion }) {
 
     const Box = styled.div`
     display: flex;
     margin: 1em;
     justify-content: center;
     align-items: center;
-    width: 8em;
-    height: 8em;
+    width: ${width ? width : '8em'};
+    height: ${height ? height: '8em'};
     padding: 10px;
     box-shadow: 5px 8px 5px #888888;
     border-radius: 5px;
@@ -52,8 +52,6 @@ export default function Box(props) {
     font-size: 1.3em;
     text-align: center;
     `;
-
-    const { num, chosen, title, showAccordion } = props;
     
     return (
         <Box key={num} 

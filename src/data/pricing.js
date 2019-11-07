@@ -191,8 +191,14 @@ export const pricing = [
             },
             {
                 "Type": "Withdrawal",
-                "Fiat": "(1)",
-                "Crypto": "Free"
+                "Fiat": "(1€-100€)*",
+                "Crypto": `BTC: 0.0005 BTC – Min. Withdrawal 0.001 BTC
+                BTK: 3.000 BTK – Min. Withdrawal 6.000 BTK
+                XRP: 0.25 XRP – Min. Withdrawal 0.50 XRP
+                ETH: 0.01 ETH – Min. Withdrawal 0.02 ETH
+                LTC: 0.001 LTC – Min. Withdrawal 0.002 LTC
+                USDT: 1 USDT – Min. Withdrawal 2 USDT
+                `
             },
         ],
       },
