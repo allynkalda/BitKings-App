@@ -4,6 +4,7 @@ import Box from '../components/atoms/Box';
 import { pricing } from '../data/pricing'
 import { animateScroll as scroll } from 'react-scroll'
 import Container from './atoms/Container';
+import Body from './Body'
 
 export default function Pricing() {
     
@@ -16,6 +17,19 @@ export default function Pricing() {
         scroll.scrollToBottom();
     }
 
+    console.log(pricing)
+
+    const headers1 = Object.keys(pricing[0].table[0]);
+    const rowHeader1 = pricing[0].header;
+    const body1 = pricing[0].table;
+    const footer1 = pricing[0].footer;
+
+
+    const headers2 = Object.keys(pricing[1].table1[0]);
+    const rowHeader2 = pricing[1].headers[0].header;
+   // const body2 = pricing[0].table;
+   // const footer2 = pricing[0].footer;
+   console.log(rowHeader2)
     return (
         <>
         <Title title={`BitKings Exchange Fees`} />
@@ -31,6 +45,10 @@ export default function Pricing() {
                         )
                     })
                 }
+        </Container>
+        <Container>
+        <Body headers={headers1} colspan={"2"} rowHeader={rowHeader1} body={body1} footer={footer1}></Body>
+        <Body headers={headers2} colspan={"7"} rowHeader={rowHeader2}></Body>
         </Container>
         </>
     )

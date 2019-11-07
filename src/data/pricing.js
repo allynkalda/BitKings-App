@@ -18,14 +18,8 @@ export const pricing = [
                 "Applicable Fee": "0.75% (1$ minimum charge)**"
             },
         ],
-        "footer": [
-            {
-                "text": "*Please note that your bank may also charge a commission to execute such purchase.",
-            },
-            {
-                "text": '**Users have the option to reduce the fees by enabling "50% fees discounted using BTK" Switch in the Pro Screen. If enabled, reduction will apply. If the user has not got enough BTK, the system will automatically buy BTK in secondary market to reach the holding requirements.',
-            }
-        ]
+        "footer": `*Please note that your bank may also charge a commission to execute such purchase.
+                        **Users have the option to reduce the fees by enabling "50% fees discounted using BTK Switch in the Pro Screen. If enabled, reduction will apply. If the user has not got enough BTK, the system will automatically buy BTK in secondary market to reach the holding requirements.`
       },
       { 
         "index": 1,
