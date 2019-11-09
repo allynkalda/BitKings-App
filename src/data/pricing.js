@@ -186,12 +186,12 @@ export const pricing = [
             {
                 "Type": "Withdrawal",
                 "Fiat": "(1€-100€)*",
-                "Crypto": `BTC: 0.0005 BTC – Min. Withdrawal 0.001 BTC\n
-                BTK: 3.000 BTK – Min. Withdrawal 6.000 BTK\n
-                XRP: 0.25 XRP – Min. Withdrawal 0.50 XRP\n
-                ETH: 0.01 ETH – Min. Withdrawal 0.02 ETH\n
-                LTC: 0.001 LTC – Min. Withdrawal 0.002 LTC\n
-                USDT: 1 USDT – Min. Withdrawal 2 USDT
+                "Crypto": `<p>BTC: 0.0005 BTC – Min. Withdrawal 0.001 BTC</p>
+                <p>BTK: 3.000 BTK – Min. Withdrawal 6.000 BTK</p>
+                <p>XRP: 0.25 XRP – Min. Withdrawal 0.50 XRP</p>
+                <p>ETH: 0.01 ETH – Min. Withdrawal 0.02 ETH</p>
+                <p>LTC: 0.001 LTC – Min. Withdrawal 0.002 LTC</p>
+                <p>USDT: 1 USDT – Min. Withdrawal 2 USDT</p>
                 `
             },
         ],
@@ -199,5 +199,5 @@ export const pricing = [
 ]
 
 export const description = {
-    'text' : 'Get to know the applicable fees on every trading screen and how they may vary according to the volume traded and the applicable reduction using BitKings (BTK) Token. '
+        'text' : 'Get to know the applicable fees on every trading screen and how they may vary according to the volume traded and the applicable reduction using BitKings (BTK) Token. '
 }

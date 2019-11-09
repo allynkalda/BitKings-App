@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 
 const Accordion = styled.button`
@@ -25,19 +25,17 @@ const Arrow = styled.span`
     padding-left: 2em;
 `;
 
-export default function Section3(props) {
+export default function Section3({ chosen, question, answer }) {
 
     const [toggle, setToggle] = useState(false);
     const [oldChosen, setOldChosen] = useState(false); 
 
-    React.useEffect(() => {
-        setOldChosen(props.chosen)
-        console.log(props.chosen)
-        console.log(oldChosen)
-        if (oldChosen !== props.chosen) {
+    useEffect(() => {
+        setOldChosen(chosen)
+        if (oldChosen !== chosen) {
             setToggle(false);
         }
-    }, [props.chosen, oldChosen])
+    }, [oldChosen, chosen])
 
 
     const toggleComponent = () => {
@@ -52,11 +50,11 @@ export default function Section3(props) {
         <div>
             <Accordion
                 onClick={() => toggleComponent()}>
-                {props.question}
+                {question}
                 {toggle ? <Arrow>&#9650;</Arrow> : <Arrow>&#9660;</Arrow>}
             </Accordion>
             <ContentBox className={`${toggle ? 'open' : 'close'}`}>
-            <div dangerouslySetInnerHTML={createMarkup(props.answer)} />
+            <div dangerouslySetInnerHTML={createMarkup(answer)} />
             </ContentBox>
         </div>
     )

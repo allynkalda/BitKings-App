@@ -24,7 +24,7 @@ export default function Pricing() {
 
     console.log(pricing)
 
-    const description = pricing[0].body;
+    const description1 = pricing[0].body;
     const headers1 = Object.keys(pricing[0].table[0]);
     const rowHeader1 = pricing[0].header;
     const body1 = pricing[0].table;
@@ -43,8 +43,7 @@ export default function Pricing() {
    const headers4 = Object.keys(pricing[2].table[0]);
    const rowHeader4 = pricing[2].header;
    const body4 = pricing[2].table;
-   //const footer3 = pricing[1].footer;
-   console.log(rowHeader2)
+
     return (
         <>
         <Title title={`BitKings Exchange Fees`} />
@@ -62,15 +61,17 @@ export default function Pricing() {
                     })
                 }
         </Container>
-        <Container>
-        <Text>{description}</Text>
-        <Body headers={headers1} colspan={"2"} rowHeader={rowHeader1} body={body1} footer={footer1}></Body>
+        <Container space={'10em'}>
+        <Text>{description1}</Text>
+        <Body headers={headers1} colspan={"2"} rowHeader={rowHeader1} body={body1} footer={footer1} 
+            table={0} switchColor={true} switchRow={true}></Body>
         <Text>{rowHeader2}</Text>
-        <Body headers={headers2} colspan={"7"} body={body2}></Body>
+        <Body headers={headers2} colspan={"7"} body={body2} table={1}></Body>
         <Text>{rowHeader3}</Text>
-        <Body headers={headers3} colspan={"8"} body={body3}></Body>
+        <Body headers={headers3} colspan={"8"} body={body3} table={2}></Body>
         <Text>{footer3}</Text>
-        <Body headers={headers4} colspan={"3"} rowHeader={rowHeader4} body={body4}></Body>
+        <Body headers={headers4} colspan={"3"} rowHeader={rowHeader4} body={body4} 
+            multiline={true} table={3} switchColor={true} switchRow={true}></Body>
         </Container>
         </>
     )
