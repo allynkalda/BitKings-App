@@ -3,7 +3,7 @@ import Row from './Row';
 import styled from 'styled-components';
 
 const Table = styled.table`
-    margin-top: 4em;
+    margin-top: 1em;
     width:100%;
     border: 1px solid #ccc;
     border-collapse: collapse;
@@ -59,7 +59,7 @@ function Header({ headers, body, rowHeader, footer, colspan }) {
                             )
                     }) : null
                 }
-                { rowHeader ? <Tr><Td colSpan={colspan}>{footer}</Td></Tr> : null}
+                { footer ? <Tr><Td colSpan={colspan}>{footer}</Td></Tr> : null}
             </tbody>
         </Table>
     )

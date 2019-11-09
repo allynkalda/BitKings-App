@@ -20,7 +20,7 @@ export const pricing = [
         ],
         "footer": `*Please note that your bank may also charge a commission to execute such purchase.
                         **Users have the option to reduce the fees by enabling "50% fees discounted using BTK Switch in the Pro Screen. If enabled, reduction will apply. If the user has not got enough BTK, the system will automatically buy BTK in secondary market to reach the holding requirements.`
-      },
+        },
       { 
         "index": 1,
         "title": "Pro Screen Fees",
@@ -186,15 +186,18 @@ export const pricing = [
             {
                 "Type": "Withdrawal",
                 "Fiat": "(1€-100€)*",
-                "Crypto": `BTC: 0.0005 BTC – Min. Withdrawal 0.001 BTC
-                BTK: 3.000 BTK – Min. Withdrawal 6.000 BTK
-                XRP: 0.25 XRP – Min. Withdrawal 0.50 XRP
-                ETH: 0.01 ETH – Min. Withdrawal 0.02 ETH
-                LTC: 0.001 LTC – Min. Withdrawal 0.002 LTC
+                "Crypto": `BTC: 0.0005 BTC – Min. Withdrawal 0.001 BTC\n
+                BTK: 3.000 BTK – Min. Withdrawal 6.000 BTK\n
+                XRP: 0.25 XRP – Min. Withdrawal 0.50 XRP\n
+                ETH: 0.01 ETH – Min. Withdrawal 0.02 ETH\n
+                LTC: 0.001 LTC – Min. Withdrawal 0.002 LTC\n
                 USDT: 1 USDT – Min. Withdrawal 2 USDT
                 `
             },
         ],
       },
-
 ]
+
+export const description = {
+    'text' : 'Get to know the applicable fees on every trading screen and how they may vary according to the volume traded and the applicable reduction using BitKings (BTK) Token. '
+}
