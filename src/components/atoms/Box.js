@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Box({ width, height, num, chosen, title, showAccordion }) {
+export default function Box({ width, height, num, chosen, title, showAccordion, fontsize }) {
 
     const Box = styled.div`
     display: flex;
@@ -49,7 +49,7 @@ export default function Box({ width, height, num, chosen, title, showAccordion }
     const ItemText = styled.p`
     margin: 0px 10px 0px 10px;
     font-family: 'Agenda', san-serif;
-    font-size: 1.3em;
+    font-size: ${fontsize ? fontsize : '1.3em'};
     text-align: center;
     `;
     

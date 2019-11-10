@@ -2,10 +2,11 @@
   font-family: "Agenda";
   src: url('./font/agenda-light.woff') format('woff');
 }
-
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1|Roboto&display=swap');
 
 
 .App {
+  font-family: 'Roboto', sans-serif;
   font-family: 'Gothic A1', sans-serif;
 }
 

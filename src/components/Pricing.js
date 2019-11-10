@@ -10,7 +10,8 @@ import styled from 'styled-components';
 export default function Pricing() {
 
     const Text = styled.p`
-        line-height: 1.5em
+        line-height: 1.5em;
+        padding: 2em 0em 1em 0em;
     `;
     
     const [show, setShow] = useState(null);
@@ -21,8 +22,6 @@ export default function Pricing() {
         setChosen(num);
         scroll.scrollToBottom();
     }
-
-    console.log(pricing)
 
     const description1 = pricing[0].body;
     const headers1 = Object.keys(pricing[0].table[0]);
@@ -44,10 +43,43 @@ export default function Pricing() {
    const rowHeader4 = pricing[2].header;
    const body4 = pricing[2].table;
 
+   const showTables = () => {
+    if (show) {
+        if (chosen === 0) {
+            return (
+                <>
+                <Text>{description1}</Text>
+                <Body headers={headers1} colspan={"2"} rowHeader={rowHeader1} body={body1} footer={footer1} 
+                    table={0} switchColor={true} switchRow={true}></Body>
+                </>
+            )
+        };
+        if (chosen === 1) {
+            return (
+                <>
+                <Text>{rowHeader2}</Text>
+                <Body headers={headers2} colspan={"7"} body={body2} table={1}></Body>
+                <Text>{rowHeader3}</Text>
+                <Body headers={headers3} colspan={"8"} body={body3} table={2}></Body>
+                <Text>{footer3}</Text>
+                </>
+            )
+        };
+        if (chosen === 2) {
+            return (
+                <>
+                <Body headers={headers4} colspan={"3"} rowHeader={rowHeader4} body={body4} 
+                    multiline={true} table={3} switchColor={true} switchRow={true}></Body>
+                </>
+            )
+        }
+    }
+   }
+
     return (
         <>
         <Title title={`BitKings Exchange Fees`} />
-        <Container>
+        <Container spaceBottom={'3em'}>
             <Text>{description.text}</Text>
                 {
                     pricing && pricing.map(item => {
@@ -55,23 +87,14 @@ export default function Pricing() {
                         const title = item.title;
                         return (
                             <Box key={num} num={num} showAccordion={showAccordion}
-                                width={'10em'} height={'8em'}
+                                width={'12em'} height={'11.5em'} fontsize={'1.8em'}
                                 chosen={chosen} title={title} />
                         )
                     })
                 }
         </Container>
-        <Container space={'10em'}>
-        <Text>{description1}</Text>
-        <Body headers={headers1} colspan={"2"} rowHeader={rowHeader1} body={body1} footer={footer1} 
-            table={0} switchColor={true} switchRow={true}></Body>
-        <Text>{rowHeader2}</Text>
-        <Body headers={headers2} colspan={"7"} body={body2} table={1}></Body>
-        <Text>{rowHeader3}</Text>
-        <Body headers={headers3} colspan={"8"} body={body3} table={2}></Body>
-        <Text>{footer3}</Text>
-        <Body headers={headers4} colspan={"3"} rowHeader={rowHeader4} body={body4} 
-            multiline={true} table={3} switchColor={true} switchRow={true}></Body>
+        <Container space={'10em'} spaceBottom={'3em'}>
+        { showTables() }
         </Container>
         </>
     )

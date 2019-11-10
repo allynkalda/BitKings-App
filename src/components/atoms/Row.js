@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Row({ item, id, multiline, parentIndex, table, switchColor }) {
+function Row({ item, multiline, parentIndex, table, switchColor }) {
 
     const Tr = styled.tr`
         &:nth-child(odd) {
@@ -10,6 +10,8 @@ function Row({ item, id, multiline, parentIndex, table, switchColor }) {
         &:nth-child(even) {
             background-color: ${switchColor ? '#fff' : '#F4F3EE'};
         }
+        text-align: center;
+        font-size: 0.85em;
     `;
 
     const Td = styled.td`
@@ -31,9 +33,9 @@ function Row({ item, id, multiline, parentIndex, table, switchColor }) {
     const checkIfMultiline = (index, item) => {
         if (index === 2 && multiline) {
             return <div dangerouslySetInnerHTML={createMarkup(item)} />
-        } return parentIndex + ', ' + index
+        } return item
     }
-    // return item
+
     const colorBlue = (index) => {
        if (table === 1) {
             if (parentIndex === 6 && index < 6) {

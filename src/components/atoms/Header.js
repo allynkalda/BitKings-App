@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 
 function Header({ headers, body, rowHeader, footer, colspan, multiline, table, switchColor, switchRow }) {
-console.log('table outside', table)
     const Table = styled.table`
         border-radius: 1em;
         overflow: hidden;
@@ -45,15 +44,21 @@ console.log('table outside', table)
         }
     `;
 
+
+
     const colorBlue = (index) => {
-        if (switchRow) {
-            return 'reverse-color';
-        } 
-        if (table === 0) {
-            console.log('table', table)
+        if (table === 0 && switchColor) {
             if (index === 1) {
-               return 'blue-text';
+                return 'blue-text reverse-color';
+             }
+        }
+        if (table === 3 && switchColor) {
+            if (index > 0) {
+            return 'blue-text reverse-color';
             }
+        }
+        if (switchColor) {
+            return 'reverse-color';
         }
         if (table === 1) {
             console.log('table', table)
@@ -67,35 +72,19 @@ console.log('table outside', table)
                return 'blue-text';
             }
        }
-       if (table === 3) {
-        console.log('table', table)
-        if (index > 0) {
-           return 'blue-text';
-        }
-   }
-        else {
-            return '';
-        }
      }
 
     const createMarkup = (item) => {
         return {__html: `${item}`};
     }
-
-    const tableColor = () => {
-        if (table === 0) {
-            console.log('table 0')
-        }
-    }
     
     return (
         <Table>
             <thead>
-                { rowHeader ? <Tr><Th 
+            { rowHeader ? <Tr><Th 
                 colSpan={colspan}>{rowHeader}</Th></Tr> : null }
             <Tr>
                 { headers ? headers.map( (item, index) => {
-                    tableColor()
                     return (
                         <Th key={index} 
                         className={colorBlue(index)}>{item}</Th>
