@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const ContainerDiv = styled.div`
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+margin-left: ${props => props.space ? props.space : '10em'};
+margin-right: ${props => props.space ? props.space : '10em'};
+padding-bottom: ${props => props.spaceBottom ? props.spaceBottom : '0px'};
+`;
+
 export default function Container({ children, space, spaceBottom }) {
 
-    const Container = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: ${space ? space : '10em'};
-    padding-right: ${space ? space : '10em'};
-    padding-bottom: ${spaceBottom ? spaceBottom : '0px'};
-    `;
-
     return (
-        <Container>
+        <ContainerDiv>
             { children }
-        </Container>
+        </ContainerDiv>
     )
 }

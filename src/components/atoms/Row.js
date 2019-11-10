@@ -1,28 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Tr = styled.tr`
+&:nth-child(odd) {
+    background-color: ${props => props.switchColor ? '#F4F3EE' : '#fff'};
+}
+&:nth-child(even) {
+    background-color: ${props => props.switchColor ? '#fff' : '#F4F3EE'};
+}
+text-align: center;
+font-size: 0.85em;
+`;
+
+const Td = styled.td`
+padding: 10px;
+border-collapse: collapse;
+
+    &.blue-text {
+        color: #00B2E3;
+    }
+`;
+
+
 function Row({ item, multiline, parentIndex, table, switchColor }) {
-
-    const Tr = styled.tr`
-        &:nth-child(odd) {
-            background-color: ${switchColor ? '#F4F3EE' : '#fff'};
-        }
-        &:nth-child(even) {
-            background-color: ${switchColor ? '#fff' : '#F4F3EE'};
-        }
-        text-align: center;
-        font-size: 0.85em;
-    `;
-
-    const Td = styled.td`
-        padding: 10px;
-        border-collapse: collapse;
-    
-            &.blue-text {
-                color: #00B2E3;
-            }
-    `;
-
 
     const eachItem = item ? Object.values(item) : null;
 
@@ -59,7 +59,7 @@ function Row({ item, multiline, parentIndex, table, switchColor }) {
     }
     
     return (
-        <Tr>
+        <Tr switchColor>
             {   
                 eachItem ?
                 eachItem.map((item, index) => {

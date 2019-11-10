@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Title from './atoms/Title';
+import TitleText from './atoms/Title';
 import Box from '../components/atoms/Box';
 import { pricing, description } from '../data/pricing'
 import { animateScroll as scroll } from 'react-scroll'
@@ -7,12 +7,13 @@ import Container from './atoms/Container';
 import Body from './Body';
 import styled from 'styled-components';
 
-export default function Pricing() {
 
-    const Text = styled.p`
-        line-height: 1.5em;
-        padding: 2em 0em 1em 0em;
-    `;
+const Text = styled.p`
+    line-height: 1.5em;
+    padding: 1em 0em 1em 0em;
+`;
+
+export default function Pricing() {
     
     const [show, setShow] = useState(null);
     const [chosen, setChosen] = useState(null);
@@ -34,10 +35,10 @@ export default function Pricing() {
     const rowHeader2 = pricing[1].headers[0].header;
     const body2 = pricing[1].table1;
 
-   const headers3 = Object.keys(pricing[1].table2[0]);
-   const rowHeader3 = pricing[1].headers[1].header;
-   const body3 = pricing[1].table2;
-   const footer3 = pricing[1].footer;
+    const headers3 = Object.keys(pricing[1].table2[0]);
+    const rowHeader3 = pricing[1].headers[1].header;
+    const body3 = pricing[1].table2;
+    const footer3 = pricing[1].footer;
 
    const headers4 = Object.keys(pricing[2].table[0]);
    const rowHeader4 = pricing[2].header;
@@ -56,13 +57,13 @@ export default function Pricing() {
         };
         if (chosen === 1) {
             return (
-                <>
+                <Container>
                 <Text>{rowHeader2}</Text>
                 <Body headers={headers2} colspan={"7"} body={body2} table={1}></Body>
                 <Text>{rowHeader3}</Text>
                 <Body headers={headers3} colspan={"8"} body={body3} table={2}></Body>
                 <Text>{footer3}</Text>
-                </>
+                </Container>
             )
         };
         if (chosen === 2) {
@@ -78,8 +79,8 @@ export default function Pricing() {
 
     return (
         <>
-        <Title title={`BitKings Exchange Fees`} />
-        <Container spaceBottom={'3em'}>
+        <TitleText title={`BitKings Exchange Fees`} />
+        <Container space={'18em'} spaceBottom={'3em'}>
             <Text>{description.text}</Text>
                 {
                     pricing && pricing.map(item => {

@@ -28,7 +28,6 @@ export default function Section2() {
     const [show, setShow] = useState(null);
     const [chosen, setChosen] = useState(null);
 
-
     const showAccordion = (num) => {
         setShow(true);
         setChosen(num);
@@ -37,7 +36,6 @@ export default function Section2() {
 
     const question = section2[chosen] && section2[chosen].qa;
 
-    console.log(section2)
     return (
         <div>
             <Container>
