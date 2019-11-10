@@ -15,7 +15,7 @@ padding-bottom: ${props => props.spaceBottom ? props.spaceBottom : '0px'};
 export default function Container({ children, space, spaceBottom }) {
 
     return (
-        <ContainerDiv>
+        <ContainerDiv space={space} spaceBottom={spaceBottom}>
             { children }
         </ContainerDiv>
     )

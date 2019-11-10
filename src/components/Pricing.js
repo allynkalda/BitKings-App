@@ -80,7 +80,7 @@ export default function Pricing() {
     return (
         <>
         <TitleText title={`BitKings Exchange Fees`} />
-        <Container space={'18em'} spaceBottom={'3em'}>
+        <Container space={'15em'} spaceBottom={'3em'}>
             <Text>{description.text}</Text>
                 {
                     pricing && pricing.map(item => {
