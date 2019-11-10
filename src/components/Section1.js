@@ -74,7 +74,7 @@ export default function Section1() {
                                 <Circle>
                                 <div className="step">{item.index}</div>
                                 </Circle>
-                                {item.index == section1.length ? <LineLast></LineLast> : <Line></Line>}
+                                {item.index === section1.length ? <LineLast></LineLast> : <Line></Line>}
                             </CircleContainer>
                             <Text>
                                 <H3>{item.title}</H3>
