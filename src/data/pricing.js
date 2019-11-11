@@ -80,7 +80,7 @@ export const pricing = [
                 "AVG": "0.05%"
             },
             {
-                "Tier": "",
+                "Tier": "Nor.5",
                 "BTK Balance": "100,000,000 < BTK",
                 "Maker": "0%",
                 "Maker (Using BTK)": "0%",

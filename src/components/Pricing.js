@@ -57,7 +57,7 @@ export default function Pricing() {
         };
         if (chosen === 1) {
             return (
-                <Container>
+                <Container space={'0px'}>
                 <Text>{rowHeader2}</Text>
                 <Body headers={headers2} colspan={"7"} body={body2} table={1}></Body>
                 <Text>{rowHeader3}</Text>
