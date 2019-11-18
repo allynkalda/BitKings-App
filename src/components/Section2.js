@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import { section2 } from '../data/faq';
-import Section3 from './Section3';
+import { section2 } from 'data/faq';
+import Section3 from 'components/Section3';
 import { animateScroll as scroll } from 'react-scroll'
-import Box from './atoms/Box';
+import Box from 'components/atoms/Box';
 
 const Container = styled.div`
     display: flex;

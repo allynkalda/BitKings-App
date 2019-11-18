@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import { Switch, Route } from "react-router-dom";
-import Faq from './components/Faq';
-import Pricing from './components/Pricing';
+import Faq from 'pages/Faq';
+import Pricing from 'pages/Pricing';
 
 function App() {
   return (

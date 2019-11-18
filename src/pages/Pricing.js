@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import TitleText from './atoms/Title';
-import Box from '../components/atoms/Box';
-import { pricing, description } from '../data/pricing'
+import TitleText from 'components/atoms/Title';
+import Box from 'components/atoms/Box';
+import { pricing, description } from 'data/pricing'
 import { animateScroll as scroll } from 'react-scroll'
-import Container from './atoms/Container';
-import Body from './Body';
+import Container from 'components/atoms/Container';
+import Body from 'components/Body';
 import styled from 'styled-components';
 
 
@@ -29,7 +29,6 @@ export default function Pricing() {
     const rowHeader1 = pricing[0].header;
     const body1 = pricing[0].table;
     const footer1 = pricing[0].footer;
-
 
     const headers2 = Object.keys(pricing[1].table1[0]);
     const rowHeader2 = pricing[1].headers[0].header;

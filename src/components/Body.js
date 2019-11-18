@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './atoms/Header'
+import Header from 'components/atoms/Header'
 
 export default function Body({ headers, rowHeader, body, footer, colspan, multiline, table, switchColor, switchRow}) {
     return (

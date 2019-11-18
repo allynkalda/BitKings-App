@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { section1 } from '../data/faq.js';
-import Title from './atoms/Title'
+import { section1 } from 'data/faq.js';
+import Title from 'components/atoms/Title'
 
 const Container = styled.div`
 display:flex;

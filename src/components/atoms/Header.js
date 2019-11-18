@@ -1,5 +1,5 @@
 import React from 'react';
-import Row from './Row';
+import Row from 'components/atoms/Row';
 import styled from 'styled-components';
 
 

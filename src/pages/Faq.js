@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Section1 from './Section1';
-import Section2 from './Section2';
+import Section1 from 'components/Section1';
+import Section2 from 'components/Section2';
 
 const MainContainer = styled.div`
     padding: 20px;
